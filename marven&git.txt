@@ -1,0 +1,78 @@
+1 ) write mavan lif cycle : 
+1.	Validate: This step validates if the project structure is correct. For example – It checks if all the dependencies have been downloaded and are available in the local repository.
+2.	Compile: It compiles the source code, converts the .java files to .class and stores the classes in target/classes folder.
+3.	Test: It runs unit tests for the project.
+4.	Package: This step packages the compiled code in distributable format like JAR or WAR.
+5.	Integration test: It runs the integration tests for the project.
+6.	Verify: This step runs checks to verify that the project is valid and meets the quality standards.
+7.	Install: This step installs the packaged code to the local Maven repository.
+8.	Deploy: It copies the packaged code to the remote repository for sharing it with other developers.
+	and its cammands :
+		1.	Validate: This step validates if the project structure is correct. For example – It checks if all the dependencies have been downloaded and are available in the local repository.
+2.	Compile: It compiles the source code, converts the .java files to .class and stores the classes in target/classes folder.
+3.	Test: It runs unit tests for the project.
+4.	Package: This step packages the compiled code in distributable format like JAR or WAR.
+5.	Integration test: It runs the integration tests for the project.
+6.	Verify: This step runs checks to verify that the project is valid and meets the quality standards.
+7.	Install: This step installs the packaged code to the local Maven repository.
+8.	Deploy: It copies the packaged code to the remote repository for sharing it with other developers.
+
+
+			
+			2)   describe  3 lines each 
+
+			mvn --version : it will show which version we are suing 
+			mvn -- compile: compile the source code of the project
+			mvn --test : test the compiled source code using a suitable unit testing framework. These tests              should not require the code be packaged or deployed
+			mvn  -- install :- install the package into the local repository, for use as a dependency in other projects locally
+			
+
+			3 WHAT I SWEB SERVICES ?
+			A web service is a software system that supports interoperable machine-to-machine interaction over a network. It has an interface described in a machine-processable format (specifically, web Service Definition Language, or WSDL). web services fulfill a specific task or a set of tasks.	
+			4) what is rest controler 
+			RestController is a Spring annotation that is used to build REST API in a declarative way. RestController annotation is applied to a class to mark it as a request handler, and Spring will do the building and provide the RESTful web service at runtime
+
+			
+5 ) we services and its methods: get , post , put delete ? describe its  
+1:  GET :  It requests are the most common and widely used methods in APIs and websites. Simply put, the GET method is used to retreive data from a server at the specified resource. 
+
+2: POST:  In web services, POST requests are used to send data to the API server to create or update a resource. The data sent to the server is stored in the request body of the HTTP request.
+
+3: PUT:  Simlar to POST, PUT requests are used to send data to the API to update or create a resource. The difference is that PUT requests are idempotent. That is, calling the same PUT request multiple times will always produce the same result. In contrast, calling a POST request repeatedly make have side effects of creating the same resource multiple times.
+
+4:DELETE:  The DELETE method is exactly as it sounds: delete the resource at the specified URL. This method is one of the more common in RESTful APIs so it's good to know how it works.
+
+
+
+			6) Git life cycle:
+
+			
+			 git init-(working directory)-git add-(stage)-git commit-(local repository)-git push-(remote repository)-git pull(back to working directory)
+
+			remote repository-clone to local repository- make changes to local repo. -commit changes in local repo. -pull the changes from remote and push our chnges to remote-<->
+
+
+
+
+
+
+
+ 
+			7)  describ the git cammends  
+				git init: Start new repositry	
+				git add: adds files to staging area
+				git commit: this commits added file and update any changed file
+				git pull: download content from remote repository and update local repository
+				git push: upload local repository content to remote repository 
+				git checkout: switch between branches
+				
+				git checkout -b: creates new branch and switch to it 
+				git checkout -d: deletes the branch
+				git log: gets history of everyting happend in repository
+				git reset: undo staged chandes in repository and sves the changes locally
+				git revert: undos the commited changes
+				git merge: merges mentioned branch into current branch
+				git rebase:  
+			8) centrilized v/s distrubuted version conrol: 
+				Centralized- diretly goes to master repo.
+				deCentralized- first goest to middle repo and gets checked 
